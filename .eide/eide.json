@@ -1,0 +1,208 @@
+{
+  "name": "face_recognition",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "Doc",
+    "Hardware",
+    "User"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Application",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "CMSIS",
+        "files": [
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/CMSIS/GD/GD32F4xx/Source/ARM/startup_gd32f450_470.s"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/CMSIS/GD/GD32F4xx/Source/system_gd32f4xx.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Firmware",
+        "files": [
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_adc.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_can.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_crc.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_ctc.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_dac.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_dbg.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_dci.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_dma.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_enet.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_exmc.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_exti.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_fmc.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_fwdgt.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_gpio.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_i2c.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_ipa.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_iref.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_misc.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_pmu.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_rcu.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_rtc.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_sdio.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_spi.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_syscfg.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_timer.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_tli.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_trng.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_usart.c"
+          },
+          {
+            "path": "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Source/gd32f4xx_wwdgt.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "GD32F470ZG",
+  "packDir": ".pack/GigaDevice/GD32F4xx_DFP.3.0.4",
+  "miscInfo": {
+    "uid": "9fdbd01fb1755af8d815779d84f71412"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "<YOUR_SCATTER_FILE>.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x5000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32f4x",
+        "interface": "cmsis-dap",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".eide/deps",
+          "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/CMSIS/GD/GD32F4xx/Include",
+          "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Include",
+          "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/CMSIS",
+          "User"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "GD32F470"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
