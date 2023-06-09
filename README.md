@@ -12,7 +12,7 @@
 ## 运行环境
 代码使用VScode搭配Embedded IDE进行编写
 
-神经网络部署基于开源项目[TinyMaix]([https://github.com/sipeed/TinyMaix])    
+神经网络部署基于开源项目[TinyMaix](https://github.com/sipeed/TinyMaix)    
 
 开发板选取立创开发板·梁山派进行核心部分搭建，板载芯片为GD32F470ZGT6
 
