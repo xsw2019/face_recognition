@@ -134,8 +134,6 @@
   "targets": {
     "Debug": {
       "excludeList": [
-        "TinyMaix/decoder_yolov2.c",
-        "TinyMaix/main_detection.c",
         "TinyMaix/cnn_face_main.c",
         "<virtual_root>/Firmware/gd32f4xx_adc.c",
         "<virtual_root>/Firmware/gd32f4xx_can.c",
@@ -161,7 +159,8 @@
         "<virtual_root>/Firmware/gd32f4xx_syscfg.c",
         "<virtual_root>/Firmware/gd32f4xx_tli.c",
         "<virtual_root>/Firmware/gd32f4xx_trng.c",
-        "<virtual_root>/Firmware/gd32f4xx_wwdgt.c"
+        "<virtual_root>/Firmware/gd32f4xx_wwdgt.c",
+        "TinyMaix/main_classification.c"
       ],
       "toolchain": "AC6",
       "compileConfig": {
@@ -176,7 +175,7 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x20000000",
-                "size": "0x1B000"
+                "size": "0xB0000"
               },
               "isChecked": true,
               "noInit": false
@@ -188,7 +187,7 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x08000000",
-                "size": "0x80000"
+                "size": "0x100000"
               },
               "isChecked": true,
               "isStartup": true
