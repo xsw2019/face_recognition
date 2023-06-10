@@ -6,7 +6,8 @@
     ".eide/deps",
     "Doc",
     "Hardware",
-    "User"
+    "User",
+    "TinyMaix"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
@@ -132,7 +133,36 @@
   },
   "targets": {
     "Debug": {
-      "excludeList": [],
+      "excludeList": [
+        "TinyMaix/decoder_yolov2.c",
+        "TinyMaix/main_detection.c",
+        "TinyMaix/cnn_face_main.c",
+        "<virtual_root>/Firmware/gd32f4xx_adc.c",
+        "<virtual_root>/Firmware/gd32f4xx_can.c",
+        "<virtual_root>/Firmware/gd32f4xx_crc.c",
+        "<virtual_root>/Firmware/gd32f4xx_ctc.c",
+        "<virtual_root>/Firmware/gd32f4xx_dac.c",
+        "<virtual_root>/Firmware/gd32f4xx_dbg.c",
+        "<virtual_root>/Firmware/gd32f4xx_dci.c",
+        "<virtual_root>/Firmware/gd32f4xx_dma.c",
+        "<virtual_root>/Firmware/gd32f4xx_enet.c",
+        "<virtual_root>/Firmware/gd32f4xx_exmc.c",
+        "<virtual_root>/Firmware/gd32f4xx_exti.c",
+        "<virtual_root>/Firmware/gd32f4xx_fmc.c",
+        "<virtual_root>/Firmware/gd32f4xx_fwdgt.c",
+        "<virtual_root>/Firmware/gd32f4xx_i2c.c",
+        "<virtual_root>/Firmware/gd32f4xx_ipa.c",
+        "<virtual_root>/Firmware/gd32f4xx_iref.c",
+        "<virtual_root>/Firmware/gd32f4xx_misc.c",
+        "<virtual_root>/Firmware/gd32f4xx_pmu.c",
+        "<virtual_root>/Firmware/gd32f4xx_rtc.c",
+        "<virtual_root>/Firmware/gd32f4xx_sdio.c",
+        "<virtual_root>/Firmware/gd32f4xx_spi.c",
+        "<virtual_root>/Firmware/gd32f4xx_syscfg.c",
+        "<virtual_root>/Firmware/gd32f4xx_tli.c",
+        "<virtual_root>/Firmware/gd32f4xx_trng.c",
+        "<virtual_root>/Firmware/gd32f4xx_wwdgt.c"
+      ],
       "toolchain": "AC6",
       "compileConfig": {
         "cpuType": "Cortex-M4",
@@ -146,7 +176,7 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x20000000",
-                "size": "0x5000"
+                "size": "0x40000"
               },
               "isChecked": true,
               "noInit": false
@@ -158,7 +188,7 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x08000000",
-                "size": "0x10000"
+                "size": "0x40000"
               },
               "isChecked": true,
               "isStartup": true
@@ -194,7 +224,11 @@
           "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/CMSIS/GD/GD32F4xx/Include",
           "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/GD32F4xx_standard_peripheral/Include",
           "../../GD32F4/GD32F4xx_Firmware_Library_V3.0.4/Firmware/CMSIS",
-          "User"
+          "User",
+          "TinyMaix",
+          "TinyMaix/include",
+          "TinyMaix/src",
+          "Hardware"
         ],
         "libList": [],
         "sourceDirList": [],

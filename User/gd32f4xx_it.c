@@ -139,5 +139,6 @@ void PendSV_Handler(void)
 */
 void SysTick_Handler(void)
 {
+    timer_count();
     delay_decrement();
 }

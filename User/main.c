@@ -37,9 +37,13 @@ OF SUCH DAMAGE.
 
 #include "gd32f4xx.h"
 #include "systick.h"
+#include "usart.h"
+#include "picture.h"
+#include "tinymaix.h"
 #include <stdio.h>
 #include "main.h"
 
+int classification_main(int argc, char** argv);
 /*!
     \brief    main function
     \param[in]  none
@@ -50,12 +54,16 @@ int main(void)
 {
     // 定时器初始化
     systick_config();
+    //串口初始化
+    usart_init(115200);
     // PA5~LED4
     rcu_periph_clock_enable(RCU_GPIOA); //时钟使能
     gpio_mode_set(GPIOA,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_PIN_5); //PA5，无上拉/下拉输出
     gpio_output_options_set(GPIOA,GPIO_OTYPE_PP,GPIO_OSPEED_MAX,GPIO_PIN_5); //PA5,推挽输出
+    //神经网络测试
+    classification_main(0,0);
     while(1) {
-        //每隔1000ms，LED切换一次状态
+        //每隔1000ms，LED切换一次状态        
         gpio_bit_toggle(GPIOA,GPIO_PIN_5);
         delay_1ms(1000);
     }
